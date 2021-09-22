@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">oppy</string>
+    <string name="btn_submit">Submit</string>
+    <string name="et_name">Employ name</string>
+    <string name="et_password">Password</string>
+    <string name="et_email">Email</string>
+    <string name="et_phone">Phone number</string>
+    <string name="et_postion">Postion</string>
+</resources>

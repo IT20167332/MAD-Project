@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "369493212252",
+    "project_id": "oppy-da692",
+    "storage_bucket": "oppy-da692.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369493212252:android:3f144a0d7849cc10a3fa99",
+        "android_client_info": {
+          "package_name": "com.example.oppy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369493212252-2lk8srmu0oqtb3olg8vd8q7qsmac4ajs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEI3WqvggDUU2fom0ekQlcFYCQGNBHIcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369493212252-2lk8srmu0oqtb3olg8vd8q7qsmac4ajs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
