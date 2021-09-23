@@ -20,6 +20,8 @@
     <string name="et_destination">Destination</string>
     <string name="btn_add">ADD</string>
     <string name="et_type">Type</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
 
     <string-array name="item">
         <item>clothes</item>

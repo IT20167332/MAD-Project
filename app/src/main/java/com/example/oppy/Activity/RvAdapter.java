@@ -41,6 +41,8 @@ public class RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         Sehedules sch = list.get(position);
         vh.text_name.setText(sch.getTitle());
         vh.text_date.setText(sch.getDate());
+        vh.text_type.setText(sch.getType());
+        vh.text_qty.setText(sch.getQty());
     }
 
     @Override
