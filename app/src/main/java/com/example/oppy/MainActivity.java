@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.oppy.Activity.AddEmployee;
+import com.example.oppy.Activity.Sed_menu;
+
+import java.security.Provider;
 
 
 public class MainActivity extends AppCompatActivity {
-
 
 
     @Override
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onadd(View view){
-        Intent intent = new Intent(this, AddEmployee.class);
+        Intent intent = new Intent(this, Sed_menu.class);
         startActivity(intent);
     }
 

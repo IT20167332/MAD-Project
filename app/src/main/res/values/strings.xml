@@ -6,4 +6,26 @@
     <string name="et_email">Email</string>
     <string name="et_phone">Phone number</string>
     <string name="et_postion">Postion</string>
+    <string name="btn_schedules">Schedules</string>
+    <string name="btn_sHistory">History</string>
+    <string name="btn_track" />
+    <string name="btn_trackS">Track Schedules</string>
+    <string name="btn_addE">Add Employee</string>
+    <string name="et_title">Title</string>
+    <string name="et_qty">Qty</string>
+    <string name="et_date">Date</string>
+    <string name="et_time">Time</string>
+    <string name="et_Vno">Vehicle No</string>
+    <string name="et_time2">Max Time</string>
+    <string name="et_destination">Destination</string>
+    <string name="btn_add">ADD</string>
+    <string name="et_type">Type</string>
+
+    <string-array name="item">
+        <item>clothes</item>
+        <item>fruit</item>
+        <item>vegetable</item>
+        <item>education item</item>
+        <item>food</item>
+    </string-array>
 </resources>
