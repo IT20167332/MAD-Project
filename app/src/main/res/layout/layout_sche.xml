@@ -12,6 +12,7 @@
     app:cardBackgroundColor="#D89191">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_card"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_weight="1"
@@ -21,13 +22,13 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btn_delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/btn_delete"
-            app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+            app:layout_constraintBaseline_toBaselineOf="@+id/btn_update"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button3" />
+            app:layout_constraintStart_toEndOf="@+id/btn_update" />
 
         <TextView
             android:id="@+id/text_name"
@@ -118,7 +119,7 @@
             app:layout_constraintStart_toEndOf="@+id/txt_qty" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn_update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="164dp"

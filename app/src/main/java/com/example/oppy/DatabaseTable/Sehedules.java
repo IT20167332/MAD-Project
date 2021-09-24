@@ -1,8 +1,14 @@
 package com.example.oppy.DatabaseTable;
 
-public class Sehedules {
+import android.os.Parcel;
+import android.os.Parcelable;
 
+import com.google.firebase.database.Exclude;
 
+public class Sehedules implements Parcelable {
+
+    @Exclude
+    private String key;
     private String title,item,type,qty;
     private String date,time,vehicleNo,destination,maxTime;
     private boolean status,isWarehouseCheck,isGateCheck;
@@ -44,8 +50,71 @@ public class Sehedules {
         this.isWarehouseCheck = isWarehouseCheck;
         this.isGateCheck = isGateCheck;
     }
+
+
+
     //setters and getters
 
+    protected Sehedules(Parcel in) {
+        key = in.readString();
+        title = in.readString();
+        item = in.readString();
+        type = in.readString();
+        qty = in.readString();
+        date = in.readString();
+        time = in.readString();
+        vehicleNo = in.readString();
+        destination = in.readString();
+        maxTime = in.readString();
+        status = in.readByte() != 0;
+        isWarehouseCheck = in.readByte() != 0;
+        isGateCheck = in.readByte() != 0;
+    }
+
+    public static final Creator<Sehedules> CREATOR = new Creator<Sehedules>() {
+        @Override
+        public Sehedules createFromParcel(Parcel in) {
+            return new Sehedules(in);
+        }
+
+        @Override
+        public Sehedules[] newArray(int size) {
+            return new Sehedules[size];
+        }
+    };
+
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(key);
+        dest.writeString(title);
+        dest.writeString(item);
+        dest.writeString(type);
+        dest.writeString(qty);
+        dest.writeString(date);
+        dest.writeString(time);
+        dest.writeString(vehicleNo);
+        dest.writeString(destination);
+        dest.writeString(maxTime);
+        dest.writeByte((byte) (status ? 1 : 0));
+        dest.writeByte((byte) (isWarehouseCheck ? 1 : 0));
+        dest.writeByte((byte) (isGateCheck ? 1 : 0));
+    }
+    //Key is here
+
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public String getTitle() {
         return title;
@@ -142,4 +211,6 @@ public class Sehedules {
     public void setGateCheck(boolean gateCheck) {
         isGateCheck = gateCheck;
     }
+
+
 }

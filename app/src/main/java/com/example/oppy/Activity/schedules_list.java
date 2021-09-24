@@ -51,6 +51,7 @@ public class schedules_list extends AppCompatActivity {
                 ArrayList<Sehedules> schs = new ArrayList<>();
                 for(DataSnapshot data: snapshot.getChildren()){
                     Sehedules sch = data.getValue(Sehedules.class);
+                    sch.setKey(data.getKey());
                     schs.add(sch);
                 }
                 adapter.setItems(schs);

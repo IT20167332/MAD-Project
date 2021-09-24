@@ -1,17 +1,26 @@
 package com.example.oppy.Activity;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.example.oppy.Database.ScheduleDb;
 import com.example.oppy.DatabaseTable.Sehedules;
 import com.example.oppy.R;
+import com.google.android.gms.common.internal.Objects;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -43,6 +52,47 @@ public class RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         vh.text_date.setText(sch.getDate());
         vh.text_type.setText(sch.getType());
         vh.text_qty.setText(sch.getQty());
+        if(sch.isStatus() == true){
+            vh.cl_card.setBackgroundColor(Color.rgb(51, 255, 109));
+        }
+        vh.btn_update.setOnClickListener(v->{
+
+            Intent intent2 = new Intent(context,add_schedules.class);
+            intent2.putExtra("EDIT", (Parcelable)sch);
+            context.startActivity(intent2);
+
+        });
+
+        vh.btn_delete.setOnClickListener(v->{
+
+            AlertDialog.Builder deleteDialog = new AlertDialog.Builder(context);
+            deleteDialog.setTitle("Warning!");
+            deleteDialog.setMessage("Are you sure delete this!");
+            deleteDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    ScheduleDb dao = new ScheduleDb();
+                    dao.remove(sch.getKey()).addOnSuccessListener(suc->{
+                        Toast.makeText(context,"Schedule Deleted!",Toast.LENGTH_SHORT).show();
+                        notifyItemRemoved(position);
+                    }).addOnFailureListener(er->{
+                        Toast.makeText(context,""+er.getMessage(),Toast.LENGTH_SHORT).show();
+                    });
+                }
+
+            });
+            deleteDialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Toast.makeText(context,"You select No",Toast.LENGTH_SHORT).show();
+                }
+            });
+            deleteDialog.create().show();
+
+
+
+        });
+
     }
 
     @Override
