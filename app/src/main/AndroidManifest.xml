@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Oppy">
-        <activity android:name=".Activity.AddEmployee"></activity>
+        <activity
+            android:name=".Activity.Main_depature"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Main_arrival"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.GkHome"
+            android:exported="true" />
+        <activity android:name=".Activity.AddEmployee" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

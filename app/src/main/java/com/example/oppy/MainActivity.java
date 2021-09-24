@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.oppy.Activity.AddEmployee;
+import com.example.oppy.Activity.GkHome;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onadd(View view){
         Intent intent = new Intent(this, AddEmployee.class);
+        startActivity(intent);
+    }
+    public void GK_home(View view){
+        Intent intent = new Intent(this, GkHome.class);
         startActivity(intent);
     }
 
