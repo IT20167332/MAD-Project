@@ -17,15 +17,17 @@ public class Sed_menu extends AppCompatActivity {
     }
 
     public void btn_addE(View view){
+
         Intent intent = new Intent(this,AddEmployee.class);
         startActivity(intent);
+
     }
     public void btn_addS(View view){
-        Intent intent = new Intent(this,add_schedules.class);
+
+        Intent intent = new Intent(this,schedules_list.class);
         startActivity(intent);
     }
     public void btn_list(View view){
-        Intent intent = new Intent(this,schedules_list.class);
-        startActivity(intent);
+
     }
 }

@@ -6,7 +6,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.oppy.Database.ScheduleDb;
 import com.example.oppy.DatabaseTable.Sehedules;
@@ -42,6 +44,12 @@ public class schedules_list extends AppCompatActivity {
 
         dao = new ScheduleDb();
         loadData();
+    }
+
+    public void btn_addS(View view){
+
+        Intent intent = new Intent(this,add_schedules.class);
+        startActivity(intent);
     }
 
     private void loadData() {

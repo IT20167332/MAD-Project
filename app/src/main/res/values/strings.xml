@@ -22,6 +22,13 @@
     <string name="et_type">Type</string>
     <string name="btn_update">Update</string>
     <string name="btn_delete">Delete</string>
+    <string name="User_name">User Name</string>
+    <string name="UserNameHint">Enter User Name</string>
+    <string name="LogInButton">LOG IN</string>
+    <string name="rb_driver">driver</string>
+    <string name="rb_manager">Manager</string>
+    <string name="rb_warehouse">Warehouse keeper</string>
+    <string name="rb_gate">Gate Keeper</string>
 
     <string-array name="item">
         <item>clothes</item>
