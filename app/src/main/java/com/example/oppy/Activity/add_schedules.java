@@ -53,7 +53,10 @@ public class add_schedules extends AppCompatActivity {
                 et_time.getText().toString(),
                 et_vehicleNo.getText().toString(),
                 et_destination.getText().toString(),
-                et_maxTime.getText().toString()
+                et_maxTime.getText().toString(),
+                false,
+                false,
+                false
                 );
 
         scheduleDb.add(sehedules).addOnSuccessListener(suc->{
