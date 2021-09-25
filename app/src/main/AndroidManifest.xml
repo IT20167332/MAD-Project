@@ -13,6 +13,14 @@
         <activity android:name=".Activity.add_schedules" />
         <activity android:name=".Activity.Sed_menu" />
         <activity android:name=".Activity.AddEmployee" />
+
+
+        <activity  android:name=".Activity.D_travel"/>
+
+        <activity  android:name=".Activity.D_schedule"/>
+
+        <activity  android:name=".Activity.D_home"/>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

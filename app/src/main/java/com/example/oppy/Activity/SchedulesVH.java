@@ -1,6 +1,5 @@
 package com.example.oppy.Activity;
 
-import android.telecom.TelecomManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,9 +19,9 @@ public class SchedulesVH extends RecyclerView.ViewHolder {
     Button btn_update,btn_delete;
     public SchedulesVH(@NonNull @NotNull View itemView) {
         super(itemView);
-        text_name = itemView.findViewById(R.id.text_name);
-        text_date = itemView.findViewById(R.id.text_date);
-        text_qty = itemView.findViewById(R.id.txt_qty);
+        text_name = itemView.findViewById(R.id.D_text_name);
+        text_date = itemView.findViewById(R.id.D_text_date);
+        text_qty = itemView.findViewById(R.id.D_txt_destand);
         text_type = itemView.findViewById(R.id.txt_type2);
         cl_card = itemView.findViewById(R.id.cl_card);
         btn_update = itemView.findViewById(R.id.btn_update);

@@ -12,7 +12,7 @@
     app:cardBackgroundColor="#D89191">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_card"
+        android:id="@+id/D_cl_card"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_weight="1"
@@ -22,23 +22,24 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/btn_delete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_delete"
-            app:layout_constraintBaseline_toBaselineOf="@+id/btn_update"
+            android:id="@+id/D_btn_decline"
+            android:layout_width="160dp"
+            android:layout_height="51dp"
+            android:text="Decline"
+            app:layout_constraintBaseline_toBaselineOf="@+id/D_btn_accept"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/btn_update" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/D_btn_accept" />
 
         <TextView
             android:id="@+id/D_text_name"
-            android:layout_width="259dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="363dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="56dp"
             android:text="Text"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintHorizontal_bias="0.12"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +58,7 @@
             android:id="@+id/D_txt_destand"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="40dp"
             android:layout_weight="1"
             android:text="TextView"
             android:textSize="20sp"
@@ -90,43 +91,52 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="@string/et_date"
+            android:text="Date"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.049"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/D_text_name" />
 
         <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/et_title"
+            app:layout_constraintBottom_toTopOf="@+id/D_text_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="124dp"
-            android:text="@string/et_qty"
+            android:text="Distance"
             app:layout_constraintBottom_toBottomOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView3" />
 
-        <TextView
-            android:id="@+id/txt_type2"
-            android:layout_width="77dp"
-            android:layout_height="37dp"
-            android:text="TextView"
-            android:textSize="20sp"
-            app:layout_constraintBaseline_toBaselineOf="@+id/D_txt_destand"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.132"
-            app:layout_constraintStart_toEndOf="@+id/D_txt_destand" />
-
         <Button
-            android:id="@+id/btn_update"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
+            android:id="@+id/D_btn_accept"
+            android:layout_width="174dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="48dp"
-            android:text="@string/btn_update"
+            android:text="Accept"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/D_txt_destand" />
+
+        <TextView
+            android:id="@+id/D_destination"
+            android:layout_width="127dp"
+            android:layout_height="37dp"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="252dp"
+            tools:layout_editor_absoluteY="154dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

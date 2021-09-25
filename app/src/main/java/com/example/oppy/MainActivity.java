@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.oppy.Activity.AddEmployee;
+import com.example.oppy.Activity.D_home;
 import com.example.oppy.Activity.Sed_menu;
 import com.example.oppy.Database.EmployeeDb;
 import com.example.oppy.DatabaseTable.Employee;
@@ -111,6 +112,8 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     prd.dismiss();
                     Toast.makeText(MainActivity.this,"Not Successful",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, D_home.class);
+                    startActivity(intent);
                 }
             }
         });
@@ -128,6 +131,8 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this,"position = "+position,Toast.LENGTH_SHORT).show();
         }else if(position.equals("Driver")){
             Toast.makeText(MainActivity.this,"position = "+position,Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, D_home.class);
+            startActivity(intent);
         }
 
 
