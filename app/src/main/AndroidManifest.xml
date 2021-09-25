@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Oppy">
-        <activity android:name=".Activity.AddEmployee"></activity>
+        <activity android:name=".Activity.StockReport" />
+        <activity android:name=".Activity.SPnotes" />
+        <activity android:name=".Activity.Schedules" />
+        <activity android:name=".Activity.weDashboard" />
+        <activity android:name=".Activity.AddEmployee" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
