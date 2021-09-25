@@ -6,4 +6,14 @@
     <string name="et_email">Email</string>
     <string name="et_phone">Phone number</string>
     <string name="et_postion">Postion</string>
+    <string name="Im1">Schedule</string>
+
+    <string name="dtv2">Distance Travelled</string>
+    <string name="Im2">distance</string>
+    <string name="imb2">dis</string>
+    <string name="imb1">sch</string>
+
+    <string name="dtv3">Schedule</string>
+    <string name="t_tv1">Total distance travelled by YOU</string>
+    <string name="t_b1">Calculate</string>
 </resources>

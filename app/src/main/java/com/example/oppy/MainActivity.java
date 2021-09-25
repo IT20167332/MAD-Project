@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.oppy.Activity.AddEmployee;
+import com.example.oppy.Activity.D_home;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void onadd(View view){
-        Intent intent = new Intent(this, AddEmployee.class);
+        Intent intent = new Intent(this, D_home.class);
         startActivity(intent);
     }
 
