@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background33"
     tools:context=".Activity.AddEmployee">
 
     <EditText
         android:id="@+id/et_userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="88dp"
         android:ems="10"
         android:hint="@string/et_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,24 +62,73 @@
         android:id="@+id/btn_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="4dp"
         android:onClick="onSubmit"
         android:text="@string/btn_submit"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_postion" />
+        app:layout_constraintTop_toBottomOf="@+id/rbg_position" />
 
-    <EditText
-        android:id="@+id/et_postion"
+    <RadioGroup
+        android:id="@+id/rbg_position"
+        android:layout_width="331dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="199dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_driver"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="@string/rb_driver" />
+
+                <RadioButton
+                    android:id="@+id/rb_werehouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="@string/rb_warehouse" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rb_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="@string/rb_manager" />
+
+                <RadioButton
+                    android:id="@+id/rb_gate"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_gate" />
+            </LinearLayout>
+        </LinearLayout>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="@string/et_postion"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_phone" />
+        android:text="@string/et_postion"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="403dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

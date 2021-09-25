@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background33"
+    tools:context=".Activity.Sed_menu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="293dp"
+        android:layout_height="469dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591">
+
+        <Button
+            android:id="@+id/btn_schedules"
+            android:layout_width="202dp"
+            android:layout_height="51dp"
+            android:background="#FFC400"
+            android:onClick="btn_addS"
+            android:shadowColor="#DD0D0D"
+            android:text="@string/btn_schedules"
+            android:textColor="#FFF9F9"
+            android:textSize="@dimen/menu_button"
+            app:layout_constraintBottom_toTopOf="@+id/btn_sHistory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#D61A1A"
+            app:strokeColor="#AE0909" />
+
+        <Button
+            android:id="@+id/btn_track"
+            android:layout_width="202dp"
+            android:layout_height="51dp"
+            android:text="TRACK"
+            android:textSize="@dimen/menu_button"
+            app:layout_constraintBottom_toTopOf="@+id/button9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sHistory" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="202dp"
+            android:layout_height="51dp"
+            android:onClick="btn_addE"
+            android:text="@string/btn_addE"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_track" />
+
+        <Button
+            android:id="@+id/btn_sHistory"
+            android:layout_width="202dp"
+            android:layout_height="51dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#BD3636"
+            android:backgroundTintMode="multiply"
+            android:onClick="btn_list"
+            android:text="@string/btn_sHistory"
+            android:textSize="@dimen/menu_button"
+            app:layout_constraintBottom_toTopOf="@+id/btn_track"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_schedules" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

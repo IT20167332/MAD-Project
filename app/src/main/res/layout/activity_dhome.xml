@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background33"
+    tools:context=".Activity.D_home">
+
+    <TextView
+        android:id="@+id/dtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dtv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imb2" />
+
+    <ImageButton
+        android:id="@+id/imb1"
+        android:layout_width="103dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="200dp"
+        android:contentDescription="@string/imb1"
+        android:onClick="gosch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/schedule"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imb2"
+        android:layout_width="103dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/imb2"
+        android:onClick="gotrav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtv3"
+        app:srcCompat="@drawable/distance"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/dtv3"
+        android:layout_width="69dp"
+        android:layout_height="23dp"
+        android:text="@string/dtv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imb1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
