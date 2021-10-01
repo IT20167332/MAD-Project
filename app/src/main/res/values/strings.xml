@@ -6,4 +6,11 @@
     <string name="et_email">Email</string>
     <string name="et_phone">Phone number</string>
     <string name="et_postion">Postion</string>
+    <string name="et_date">Date</string>
+    <string name="MyComplaints">MY COMPLAINTS</string>
+    <string name="dtravel">Total distance travelled by Distributor</string>
+    <string name="et_item">Item</string>
+    <string name="W_btn_more">More...</string>
+    <string name="W_btn_Check">Check</string>
+    <string name="et_qty">Qty</string>
 </resources>
