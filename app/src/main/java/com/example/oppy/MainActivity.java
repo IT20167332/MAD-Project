@@ -10,12 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.oppy.Activity.AddEmployee;
-import com.example.oppy.Activity.D_home;
 import com.example.oppy.Activity.Sed_menu;
 import com.example.oppy.Database.EmployeeDb;
 import com.example.oppy.DatabaseTable.Employee;
-import com.example.oppy.DatabaseTable.Sehedules;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -28,9 +25,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import org.jetbrains.annotations.NotNull;
-
-import java.security.Provider;
-import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -112,8 +106,7 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     prd.dismiss();
                     Toast.makeText(MainActivity.this,"Not Successful",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, D_home.class);
-                    startActivity(intent);
+
                 }
             }
         });
@@ -129,10 +122,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this,"position = "+position,Toast.LENGTH_SHORT).show();
         }else if(position.equals("Gate Keeper")){
             Toast.makeText(MainActivity.this,"position = "+position,Toast.LENGTH_SHORT).show();
+
+
+
         }else if(position.equals("Driver")){
             Toast.makeText(MainActivity.this,"position = "+position,Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(MainActivity.this, D_home.class);
-            startActivity(intent);
+
         }
 
 
