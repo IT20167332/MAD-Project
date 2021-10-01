@@ -1,4 +1,4 @@
-package com.example.oppy.Activity;
+package com.example.oppy.Activity.managerManagement;
 
 import android.content.Intent;
 import android.os.Bundle;

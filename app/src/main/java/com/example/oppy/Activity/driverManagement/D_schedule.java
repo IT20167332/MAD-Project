@@ -1,4 +1,4 @@
-package com.example.oppy.Activity;
+package com.example.oppy.Activity.driverManagement;
 
 import android.os.Bundle;
 
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.example.oppy.Activity.driverManagement.D_RvAdapter;
 import com.example.oppy.Database.ScheduleDb;
 import com.example.oppy.DatabaseTable.Sehedules;
 import com.example.oppy.R;

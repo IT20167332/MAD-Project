@@ -10,14 +10,12 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.oppy.Activity.AddEmployee;
-import com.example.oppy.Activity.D_home;
-import com.example.oppy.Activity.GkHome;
-import com.example.oppy.Activity.Sed_menu;
-import com.example.oppy.Activity.weDashboard;
+import com.example.oppy.Activity.driverManagement.D_home;
+import com.example.oppy.Activity.gatekeeperManagement.GkHome;
+import com.example.oppy.Activity.managerManagement.Sed_menu;
+import com.example.oppy.Activity.WarehouseManagement.weDashboard;
 import com.example.oppy.Database.EmployeeDb;
 import com.example.oppy.DatabaseTable.Employee;
-import com.example.oppy.DatabaseTable.Sehedules;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -28,11 +26,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import org.jetbrains.annotations.NotNull;
-
-import java.security.Provider;
-import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package com.example.oppy.Activity;
+package com.example.oppy.Activity.managerManagement;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -53,7 +53,7 @@ public class RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
         vh.btn_update.setOnClickListener(v->{
 
-            Intent intent2 = new Intent(context,add_schedules.class);
+            Intent intent2 = new Intent(context, add_schedules.class);
             intent2.putExtra("EDIT", (Parcelable)sch);
             context.startActivity(intent2);
 

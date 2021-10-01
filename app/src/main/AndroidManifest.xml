@@ -10,30 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Oppy">
 
-        <activity android:name=".Activity.schedules_list" />
-        <activity android:name=".Activity.add_schedules" />
-        <activity android:name=".Activity.Sed_menu" />
-        <activity android:name=".Activity.AddEmployee" />
+        <activity android:name=".Activity.managerManagement.schedules_list" />
+        <activity android:name=".Activity.managerManagement.add_schedules" />
+        <activity android:name=".Activity.managerManagement.Sed_menu" />
+        <activity android:name=".Activity.managerManagement.AddEmployee" />
 
 
-        <activity  android:name=".Activity.D_travel"/>
+        <activity  android:name=".Activity.driverManagement.D_travel"/>
 
-        <activity  android:name=".Activity.D_schedule"/>
+        <activity  android:name=".Activity.driverManagement.D_schedule"/>
 
-        <activity  android:name=".Activity.D_home"/>
+        <activity  android:name=".Activity.driverManagement.D_home"/>
 
-        <activity android:exported="true" android:name=".Activity.Main_depature"/>
+        <activity android:exported="true" android:name=".Activity.gatekeeperManagement.Main_depature"/>
 
-        <activity android:exported="true" android:name=".Activity.Main_arrival"/>
+        <activity android:exported="true" android:name=".Activity.gatekeeperManagement.Main_arrival"/>
 
-        <activity android:exported="true" android:name=".Activity.GkHome"/>
+        <activity android:exported="true" android:name=".Activity.gatekeeperManagement.GkHome"/>
 
-        <activity android:name=".Activity.StockReport"/>
+        <activity android:name=".Activity.WarehouseManagement.StockReport"/>
 
-        <activity android:name=".Activity.SPnotes"/>
+        <activity android:name=".Activity.WarehouseManagement.SPnotes"/>
 
-        <activity android:name=".Activity.weDashboard"/>
-        <activity android:name=".Activity.Schedules"/>
+        <activity android:name=".Activity.WarehouseManagement.weDashboard"/>
+        <activity android:name=".Activity.managerManagement.Schedules"/>
 
         <activity android:name=".MainActivity">
 

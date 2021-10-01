@@ -1,4 +1,4 @@
-package com.example.oppy.Activity;
+package com.example.oppy.Activity.driverManagement;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,21 +8,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.oppy.R;
 
-public class GkHome extends AppCompatActivity {
+public class D_home extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.activity_gk_home2);
+        setContentView(R.layout.activity_dhome);
     }
-
-    public void btnArrival(View view) {
-        Intent intent = new Intent(this, Main_arrival.class);
+    public void gosch(View view){
+        Intent intent = new Intent(this, D_schedule.class);
         startActivity(intent);
     }
-    public void btnDeparture(View view) {
-        Intent intent = new Intent(this, Main_depature.class);
+    public void gotrav(View view){
+        Intent intent = new Intent(this, D_travel.class);
         startActivity(intent);
     }
 }
+

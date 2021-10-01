@@ -1,10 +1,9 @@
-package com.example.oppy.Activity;
+package com.example.oppy.Activity.managerManagement;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;

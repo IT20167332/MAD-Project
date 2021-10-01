@@ -1,4 +1,4 @@
-package com.example.oppy.Activity;
+package com.example.oppy.Activity.managerManagement;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.example.oppy.Activity.managerManagement.RvAdapter;
+import com.example.oppy.Activity.managerManagement.add_schedules;
 import com.example.oppy.Database.ScheduleDb;
 import com.example.oppy.DatabaseTable.Sehedules;
 import com.example.oppy.R;
@@ -48,7 +50,7 @@ public class schedules_list extends AppCompatActivity {
 
     public void btn_addS(View view){
 
-        Intent intent = new Intent(this,add_schedules.class);
+        Intent intent = new Intent(this, add_schedules.class);
         startActivity(intent);
     }
 

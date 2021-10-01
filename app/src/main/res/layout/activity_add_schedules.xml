@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background33"
-    tools:context=".Activity.add_schedules">
+    tools:context=".Activity.managerManagement.add_schedules">
 
     <EditText
         android:id="@+id/et_title"
