@@ -18,8 +18,8 @@ import java.util.HashMap;
 
 public class add_schedules<edit_sche> extends AppCompatActivity {
 
-    EditText et_title,et_qty,et_date,et_time,et_maxTime,et_vehicleNo,et_destination,et_type;
-    Spinner spin_item;
+    EditText et_title,et_qty,et_date,et_time,et_maxTime,et_vehicleNo,et_destination,M_et_distance;
+    Spinner spin_item,et_type;
     Button brn_addS;
 
     ScheduleDb scheduleDb = new ScheduleDb();
@@ -40,10 +40,15 @@ public class add_schedules<edit_sche> extends AppCompatActivity {
         spin_item = findViewById(R.id.spin_item);
         et_type = findViewById(R.id.et_type);
         brn_addS = findViewById(R.id.brn_addS);
+        M_et_distance = findViewById(R.id.M_et_distance2);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.item,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin_item.setAdapter(adapter);
+
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.type,android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        et_type.setAdapter(adapter2);
         //spin_item.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
 
         try{
@@ -55,7 +60,7 @@ public class add_schedules<edit_sche> extends AppCompatActivity {
                 brn_addS.setText("UPDATE");
                 et_title.setText(edit_sche.getTitle());
                 et_qty.setText(edit_sche.getQty());
-                et_type.setText(edit_sche.getType());
+                //et_type.setText(edit_sche.getType());
                 et_maxTime.setText(edit_sche.getTime());
                 et_destination.setText(edit_sche.getDestination());
                 et_vehicleNo.setText(edit_sche.getVehicleNo());
@@ -73,7 +78,7 @@ public class add_schedules<edit_sche> extends AppCompatActivity {
                 Sehedules sehedules = new Sehedules(
                         et_title.getText().toString(),
                         spin_item.getSelectedItem().toString(),
-                        et_type.getText().toString(),
+                        et_type.getSelectedItem().toString(),
                         et_qty.getText().toString(),
                         et_date.getText().toString(),
                         et_time.getText().toString(),
@@ -82,7 +87,8 @@ public class add_schedules<edit_sche> extends AppCompatActivity {
                         et_maxTime.getText().toString(),
                         false,
                         false,
-                        false
+                        false,
+                        Integer.valueOf(M_et_distance.getText().toString())
                 );
 
                 scheduleDb.add(sehedules).addOnSuccessListener(suc -> {
@@ -97,13 +103,14 @@ public class add_schedules<edit_sche> extends AppCompatActivity {
 
                     hashMap.put("title",et_title.getText().toString());
                     hashMap.put("item",spin_item.getSelectedItem().toString());
-                    hashMap.put("type",et_type.getText().toString());
+                    hashMap.put("type",et_type.getSelectedItem().toString());
                     hashMap.put("qty",et_qty.getText().toString());
                     hashMap.put("date",et_date.getText().toString());
                     hashMap.put("time",et_time.getText().toString());
                     hashMap.put("vehicleNo",et_vehicleNo.getText().toString());
                     hashMap.put("destination",et_destination.getText().toString());
                     hashMap.put("maxTime",et_maxTime.getText().toString());
+                    hashMap.put("distance",Integer.valueOf(M_et_distance.getText().toString()));
 
                     scheduleDb.update(edit_sche.getKey(),hashMap).addOnSuccessListener(suc->{
                         Toast.makeText(this,"Record is updated",Toast.LENGTH_SHORT).show();

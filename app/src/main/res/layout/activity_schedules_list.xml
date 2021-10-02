@@ -15,14 +15,14 @@
         android:orientation="horizontal">
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/D_swip"
+            android:id="@+id/M_swip"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
 
             android:background="@drawable/background33">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/D_rv"
+                android:id="@+id/M_rv"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 

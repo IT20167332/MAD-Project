@@ -34,8 +34,8 @@ public class schedules_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedules_list);
 
-        swipeRefreshLayout = findViewById(R.id.D_swip);
-        recyclerView = findViewById(R.id.D_rv);
+        swipeRefreshLayout = findViewById(R.id.M_swip);
+        recyclerView = findViewById(R.id.M_rv);
         recyclerView.setHasFixedSize(true);
 
         LinearLayoutManager manager = new LinearLayoutManager(this);

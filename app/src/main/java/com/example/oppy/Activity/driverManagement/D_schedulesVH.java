@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class D_schedulesVH extends RecyclerView.ViewHolder {
 
-    public TextView D_text_name,D_text_date,D_txt_destand,D_text_type,D_destination;
+    public TextView D_text_name,D_text_date,D_txt_destand,D_text_type,D_destination,D_txt_accept,D_destination1;
     public ConstraintLayout D_cl_card;
     Button D_btn_accept,D_btn_decline,WH_delete;
 
@@ -28,5 +28,7 @@ public class D_schedulesVH extends RecyclerView.ViewHolder {
         D_btn_accept = itemView.findViewById(R.id.D_btn_accept);
         D_btn_decline = itemView.findViewById(R.id.D_btn_decline);
         D_destination = itemView.findViewById(R.id.D_destination);
+        D_txt_accept = itemView.findViewById(R.id.D_txt_accept);
+
     }
 }

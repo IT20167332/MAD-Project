@@ -47,6 +47,18 @@
         <item>food</item>
     </string-array>
 
+    <string-array name="priority">
+        <item>LOW</item>
+        <item>MEADIAM</item>
+        <item>HIGH</item>
+
+    </string-array>
+
+    <string-array name="type">
+        <item>ARRIVAL</item>
+        <item>DEPARTURE</item>
+    </string-array>
+
     <string name="Arrivalbtn">ARRIVAL</string>
 
     <string name="Departurebtn">DEPARTURE</string>
@@ -83,5 +95,19 @@
 
     <string name="MyComplaints">MY COMPLAINTS</string>
     <string name="dtravel">Total distance travelled by Distributor</string>
+    <string name="et_item">Item</string>
+    <string name="W_btn_more">More...</string>
+    <string name="W_btn_Check">Check</string>
+    <string name="G_btn_complaint">Complaint</string>
+    <string name="G_btn_accept">Accept</string>
+    <string name="a" />
+    <string name="dtxt_descr">escription</string>
+    <string name="dtxt_description">Description</string>
+    <string name="arr_and_dep"><![CDATA[ARRIVAL & DEPARTURE]]></string>
+    <string name="txt_arrivalDate">Arrival Date</string>
+    <string name="Departure_Date">Departure Date</string>
+    <string name="txt_distance">Distance</string>
+    <string name="etDista">Km</string>
+    <string name="Notis_accept">ACCEPTED</string>
 
 </resources>

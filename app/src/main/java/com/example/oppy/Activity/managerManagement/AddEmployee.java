@@ -31,6 +31,7 @@ public class AddEmployee extends AppCompatActivity {
     EditText et_password;
     EditText et_email;
     EditText et_phone;
+    EditText M_et_distance;
     Button btn_submit;
     //EditText et_position;
     RadioButton rb_driver,rb_manager,rb_warehouse,rb_gate;
@@ -49,6 +50,7 @@ public class AddEmployee extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_add_employee);
 
         et_name = findViewById(R.id.et_userName);
@@ -68,8 +70,6 @@ public class AddEmployee extends AppCompatActivity {
         rb_manager = findViewById(R.id.rb_manager);
         rb_warehouse = findViewById(R.id.rb_werehouse);
         rbg_position = findViewById(R.id.rbg_position);
-
-
 
 
     }

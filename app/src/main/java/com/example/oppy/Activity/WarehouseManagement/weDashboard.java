@@ -1,12 +1,11 @@
 package com.example.oppy.Activity.WarehouseManagement;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.oppy.Activity.managerManagement.Schedules;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.oppy.R;
 
 public class weDashboard extends AppCompatActivity {
@@ -16,16 +15,14 @@ public class weDashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_we_dashboard);
     }
+
     public void schedule(View view){
-        Intent intent = new Intent(this, Schedules.class);
+        Intent intent = new Intent(this, RV_activity.class);
         startActivity(intent);
     }
-    public void spnote(View view){
-        Intent intent = new Intent(this, SPnotes.class);
-        startActivity(intent);
-    }
+
     public void streport(View view){
-        Intent intent = new Intent(this, StockReport.class);
+        Intent intent = new Intent(this, warehouseList.class);
         startActivity(intent);
     }
 }

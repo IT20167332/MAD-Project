@@ -9,35 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Oppy">
-
+        <activity android:name=".Activity.WarehouseManagement.warehouseList"></activity>
+        <activity android:name=".Activity.gatekeeperManagement.MY_complaint_activity" />
+        <activity android:name=".Activity.gatekeeperManagement.G_Complain" />
+        <activity android:name=".Activity.gatekeeperManagement.RV_arrival_activity" />
+        <activity android:name=".Activity.gatekeeperManagement.addVehicle" />
+        <activity android:name=".Activity.WarehouseManagement.RV_activity" />
         <activity android:name=".Activity.managerManagement.schedules_list" />
         <activity android:name=".Activity.managerManagement.add_schedules" />
         <activity android:name=".Activity.managerManagement.Sed_menu" />
         <activity android:name=".Activity.managerManagement.AddEmployee" />
-
-
-        <activity  android:name=".Activity.driverManagement.D_travel"/>
-
-        <activity  android:name=".Activity.driverManagement.D_schedule"/>
-
-        <activity  android:name=".Activity.driverManagement.D_home"/>
-
-        <activity android:exported="true" android:name=".Activity.gatekeeperManagement.Main_depature"/>
-
-        <activity android:exported="true" android:name=".Activity.gatekeeperManagement.Main_arrival"/>
-
-        <activity android:exported="true" android:name=".Activity.gatekeeperManagement.GkHome"/>
-
-        <activity android:name=".Activity.WarehouseManagement.StockReport"/>
-
-        <activity android:name=".Activity.WarehouseManagement.SPnotes"/>
-
-        <activity android:name=".Activity.WarehouseManagement.weDashboard"/>
-        <activity android:name=".Activity.managerManagement.Schedules"/>
-
+        <activity android:name=".Activity.driverManagement.D_travel" />
+        <activity android:name=".Activity.driverManagement.D_schedule" />
+        <activity android:name=".Activity.driverManagement.D_home" />
+        <activity
+            android:name=".Activity.gatekeeperManagement.Main_depature"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.gatekeeperManagement.GkHome"
+            android:exported="true" />
+        <activity android:name=".Activity.WarehouseManagement.StockReport" />
+        <activity android:name=".Activity.WarehouseManagement.SPnotes" />
+        <activity android:name=".Activity.WarehouseManagement.weDashboard" />
+        <activity android:name=".Activity.gatekeeperManagement.Schedules" />
         <activity android:name=".MainActivity">
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

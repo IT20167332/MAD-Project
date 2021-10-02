@@ -11,7 +11,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.oppy.Activity.driverManagement.D_home;
+import com.example.oppy.Activity.gatekeeperManagement.G_Complain;
 import com.example.oppy.Activity.gatekeeperManagement.GkHome;
+import com.example.oppy.Activity.gatekeeperManagement.RV_arrival_activity;
 import com.example.oppy.Activity.managerManagement.Sed_menu;
 import com.example.oppy.Activity.WarehouseManagement.weDashboard;
 import com.example.oppy.Database.EmployeeDb;
@@ -107,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     prd.dismiss();
                     Toast.makeText(MainActivity.this,"Not Successful",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, weDashboard.class);
+                    startActivity(intent);
 
                 }
             }

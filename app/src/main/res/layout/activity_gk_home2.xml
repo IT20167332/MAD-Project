@@ -8,11 +8,11 @@
     tools:context=".Activity.gatekeeperManagement.GkHome">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/W_button_submit"
         android:layout_width="387dp"
         android:layout_height="85dp"
         android:onClick="btnArrival"
-        android:text="@string/Arrivalbtn"
+        android:text="@string/arr_and_dep"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.458"
@@ -25,7 +25,7 @@
         android:layout_width="388dp"
         android:layout_height="79dp"
         android:onClick="btnDeparture"
-        android:text="@string/Departurebtn"
+        android:text="@string/MyComplaints"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"

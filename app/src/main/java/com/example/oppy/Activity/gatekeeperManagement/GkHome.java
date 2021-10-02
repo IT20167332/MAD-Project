@@ -18,11 +18,11 @@ public class GkHome extends AppCompatActivity {
     }
 
     public void btnArrival(View view) {
-        Intent intent = new Intent(this, Main_arrival.class);
+        Intent intent = new Intent(this, RV_arrival_activity.class);
         startActivity(intent);
     }
     public void btnDeparture(View view) {
-        Intent intent = new Intent(this, Main_depature.class);
+        Intent intent = new Intent(this, MY_complaint_activity.class);
         startActivity(intent);
     }
 }

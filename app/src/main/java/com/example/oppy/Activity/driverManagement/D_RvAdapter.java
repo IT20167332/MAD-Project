@@ -45,14 +45,19 @@ public class D_RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
         Sehedules sch = list.get(position);
         vh.D_text_name.setText(sch.getTitle());
         vh.D_text_date.setText(sch.getDate());
-        vh.D_txt_destand.setText(sch.getMaxTime());
+        vh.D_txt_destand.setText(String.valueOf(sch.getDistance()));
         vh.D_destination.setText(sch.getDestination());
-        //vh.D_text_qty.setText(sch.getQty());
 
+        //vh.D_text_qty.setText(sch.getQty());
+        if(sch.isStatus()==true){
+            vh.D_txt_accept.setVisibility(View.VISIBLE);
+        }else{
+
+        }
 
         vh.D_btn_accept.setOnClickListener(v->{
             HashMap<String,Object> hashMap = new HashMap<>();
-            hashMap.put("isGateKeeperChck",true);
+            hashMap.put("status",true);
             D_scheduleDb.update(sch.getKey(),hashMap).addOnSuccessListener(suc->{
                 Toast.makeText(context,"Accepted!",Toast.LENGTH_SHORT).show();
             }).addOnFailureListener(er->{

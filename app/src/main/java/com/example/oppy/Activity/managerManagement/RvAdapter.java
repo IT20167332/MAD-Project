@@ -46,11 +46,33 @@ public class RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         Sehedules sch = list.get(position);
         vh.text_name.setText(sch.getTitle());
         vh.text_date.setText(sch.getDate());
-        vh.text_type.setText(sch.getType());
+
         vh.text_qty.setText(sch.getQty());
+
+        String type = sch.getType();
+
+        if(type.equals("ARRIVAL")){
+            vh.M_arrow_G.setVisibility(View.VISIBLE);
+        }else{vh.M_arrow_R.setVisibility(View.VISIBLE);}
+
+
+        if((sch.isStatus() == true) &&(sch.isGateCheck() == true) && (sch.isWarehouseCheck()==true)){
+            vh.cl_card.setBackgroundColor(Color.rgb(198, 232, 114));
+            //198, 232, 114
+        }else{vh.cl_card.setBackgroundColor(Color.rgb(247, 211, 166));}
+
         if(sch.isStatus() == true){
-            vh.cl_card.setBackgroundColor(Color.rgb(51, 255, 109));
-        }
+            vh.M_img_lorry_green.setVisibility(View.VISIBLE);
+        }else{vh.M_img_lorry_red.setVisibility(View.VISIBLE);}
+
+        if(sch.isGateCheck() == true){
+            vh.M_img_gate_green.setVisibility(View.VISIBLE);
+        }else{vh.M_img_gate_red.setVisibility(View.VISIBLE);}
+
+        if(sch.isWarehouseCheck()==true){
+            vh.M_img_house_green.setVisibility(View.VISIBLE);
+        }else{vh.M_img_house_red.setVisibility(View.VISIBLE);}
+
         vh.btn_update.setOnClickListener(v->{
 
             Intent intent2 = new Intent(context, add_schedules.class);
@@ -71,6 +93,8 @@ public class RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     dao.remove(sch.getKey()).addOnSuccessListener(suc->{
                         Toast.makeText(context,"Schedule Deleted!",Toast.LENGTH_SHORT).show();
                         notifyItemRemoved(position);
+                        Intent intent2 = new Intent(context,schedules_list.class);
+                        context.startActivity(intent2);
                     }).addOnFailureListener(er->{
                         Toast.makeText(context,""+er.getMessage(),Toast.LENGTH_SHORT).show();
                     });
@@ -84,8 +108,6 @@ public class RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 }
             });
             deleteDialog.create().show();
-
-
 
         });
 

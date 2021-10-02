@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="417dp"
+            android:layout_height="246dp">
+
+
+            <Button
+                android:id="@+id/G_btn_complain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/G_btn_complaint"
+                app:layout_constraintBaseline_toBaselineOf="@+id/G_btn_accept"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/G_btn_accept" />
+
+            <TextView
+                android:id="@+id/G_txt_title"
+                android:layout_width="279dp"
+                android:layout_height="40dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/G_txt_time"
+                android:layout_width="83dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:text="TextView"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView11"
+                app:layout_constraintStart_toEndOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/et_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/G_txt_title" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:text="@string/et_date"
+                app:layout_constraintBaseline_toBaselineOf="@+id/G_txt_time"
+                app:layout_constraintStart_toEndOf="@+id/G_txt_time" />
+
+            <TextView
+                android:id="@+id/G_text_date"
+                android:layout_width="97dp"
+                android:layout_height="32dp"
+                android:text="TextView"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.384"
+                app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+            <Button
+                android:id="@+id/G_btn_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="88dp"
+                android:text="@string/G_btn_accept"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <ImageView
+                android:id="@+id/G_arr_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toEndOf="@+id/G_txt_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_south_west_24" />
+
+            <ImageView
+                android:id="@+id/G_dep_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.545"
+                app:layout_constraintStart_toEndOf="@+id/G_txt_title"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_call_made_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
