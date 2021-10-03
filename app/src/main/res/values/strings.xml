@@ -13,4 +13,10 @@
     <string name="W_btn_more">More...</string>
     <string name="W_btn_Check">Check</string>
     <string name="et_qty">Qty</string>
+    <string name="et_title">Title</string>
+    <string name="btn_add">ADD</string>
+    <string name="btn_delete">Delete</string>
+    <string name="UserNameHint">Enter User Name</string>
+    <string name="User_name">User Name</string>
+    <string name="LogInButton">LOG IN</string>
 </resources>

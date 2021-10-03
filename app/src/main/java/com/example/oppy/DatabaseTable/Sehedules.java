@@ -11,6 +11,7 @@ public class Sehedules implements Parcelable {
     private String key;
     private String title,item,type,qty;
     private String date,time,vehicleNo,destination,maxTime;
+    private int distance;
     private boolean status,isWarehouseCheck,isGateCheck;
         //status = isDriverCheck
     public Sehedules() {
@@ -19,7 +20,7 @@ public class Sehedules implements Parcelable {
     public Sehedules(String title, String item,
                      String type, String qty,
                      String date, String time,
-                     String vehicleNo, String destination, String maxTime) {
+                     String vehicleNo, String destination, String maxTime,int distance) {
         this.title = title;
         this.item = item;
         this.type = type;
@@ -29,13 +30,14 @@ public class Sehedules implements Parcelable {
         this.vehicleNo = vehicleNo;
         this.destination = destination;
         this.maxTime = maxTime;
+        this.distance = distance;
 
     }
 
     public Sehedules(String title, String item, String type,
                      String qty, String date, String time,
                      String vehicleNo, String destination,
-                     String maxTime, boolean status, boolean isWarehouseCheck, boolean isGateCheck) {
+                     String maxTime, boolean status, boolean isWarehouseCheck, boolean isGateCheck,int distance) {
 
         this.title = title;
         this.item = item;
@@ -49,6 +51,7 @@ public class Sehedules implements Parcelable {
         this.status = status;
         this.isWarehouseCheck = isWarehouseCheck;
         this.isGateCheck = isGateCheck;
+        this.distance = distance;
     }
 
 
@@ -69,6 +72,7 @@ public class Sehedules implements Parcelable {
         status = in.readByte() != 0;
         isWarehouseCheck = in.readByte() != 0;
         isGateCheck = in.readByte() != 0;
+        distance = in.readInt();
     }
 
     public static final Creator<Sehedules> CREATOR = new Creator<Sehedules>() {
@@ -104,9 +108,18 @@ public class Sehedules implements Parcelable {
         dest.writeByte((byte) (status ? 1 : 0));
         dest.writeByte((byte) (isWarehouseCheck ? 1 : 0));
         dest.writeByte((byte) (isGateCheck ? 1 : 0));
+        dest.writeInt(distance);
     }
     //Key is here
 
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
 
     public String getKey() {
         return key;

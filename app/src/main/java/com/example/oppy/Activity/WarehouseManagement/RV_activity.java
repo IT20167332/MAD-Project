@@ -1,4 +1,4 @@
-package com.example.oppy.Activity;
+package com.example.oppy.Activity.WarehouseManagement;
 
 import android.os.Bundle;
 
@@ -14,6 +14,8 @@ import com.example.oppy.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -43,10 +45,11 @@ public class RV_activity extends AppCompatActivity {
     private  void loadData(){
         dao.get().addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull  DataSnapshot snapshot) {
+            public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 ArrayList<Sehedules> emps = new ArrayList<>();
                 for(DataSnapshot data : snapshot.getChildren()){
                     Sehedules emp = data.getValue(Sehedules.class);
+                    emp.setKey(data.getKey());
                     emps.add(emp);
                 }
                 adapter.setItems(emps);
@@ -54,7 +57,7 @@ public class RV_activity extends AppCompatActivity {
             }
 
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
+            public void onCancelled(@NonNull @NotNull DatabaseError error) {
 
             }
         });

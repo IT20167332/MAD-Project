@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.SPnotes">
+    android:background="@drawable/background33"
+    tools:context=".Activity.WarehouseManagement.SPnotes">
 
     <TextView
         android:id="@+id/textView5"
@@ -22,45 +23,72 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/edit_title"
-        android:layout_width="217dp"
-        android:layout_height="40dp"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="100dp"
-        android:hint="Enter Title"
-        android:padding="10dp"
-        android:text="Enter Title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
-        android:id="@+id/edit_desc"
-        android:layout_width="0dp"
-        android:layout_height="250dp"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginTop="92dp"
+        android:id="@+id/W_item"
+        android:layout_width="295dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="200dp"
         android:ems="10"
-        android:gravity="start"
-        android:hint="Enter Description"
-        android:inputType="textMultiLine"
-        android:padding="10dp"
-        android:text="Enter Description"
+        android:inputType="textPersonName"
+        android:text="Create Note"
+        android:textColor="#00BCD4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_title" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/save_btn"
+        android:id="@+id/W_button_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:layout_marginHorizontal="20dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="513dp" />
+        app:layout_constraintTop_toBottomOf="@+id/W_item"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:text="Date:"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="290dp"
+        android:layout_height="39dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/et_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
