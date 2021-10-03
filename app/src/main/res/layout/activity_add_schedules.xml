@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background33"
+    tools:context=".Activity.managerManagement.add_schedules">
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="55dp"
+        android:layout_height="46dp"
+        android:text="@string/etDista"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/M_et_distance2"
+        app:layout_constraintStart_toEndOf="@+id/M_et_distance2" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_distance"
+        app:layout_constraintBottom_toTopOf="@+id/M_et_distance2"
+        app:layout_constraintStart_toStartOf="@+id/M_et_distance2" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="337dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/et_title"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spin_item"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/et_type"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title" />
+
+    <EditText
+        android:id="@+id/et_qty"
+        android:layout_width="173dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/et_qty"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_item" />
+
+    <EditText
+        android:id="@+id/et_Vno"
+        android:layout_width="142dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/Departure_Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/et_time2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_date" />
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/txt_arrivalDate"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/et_time"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_qty" />
+
+    <EditText
+        android:id="@+id/et_time"
+        android:layout_width="142dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="@string/ArrivalTime"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/et_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/et_date" />
+
+    <EditText
+        android:id="@+id/et_destination"
+        android:layout_width="160dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/et_destination"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Vno" />
+
+    <EditText
+        android:id="@+id/et_time2"
+        android:layout_width="137dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="@string/DepartureTime"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/et_Vno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/et_Vno" />
+
+    <Button
+        android:id="@+id/brn_addS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/teal_200"
+        android:text="@string/btn_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_destination" />
+
+    <Spinner
+        android:id="@+id/et_type"
+        android:layout_width="155dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spin_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/spin_item" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/et_title"
+        app:layout_constraintBottom_toTopOf="@+id/et_title"
+        app:layout_constraintStart_toStartOf="@+id/et_title" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/et_item"
+        app:layout_constraintBottom_toTopOf="@+id/spin_item"
+        app:layout_constraintStart_toStartOf="@+id/spin_item" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/et_type"
+        app:layout_constraintBottom_toTopOf="@+id/et_type"
+        app:layout_constraintStart_toStartOf="@+id/et_type" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/et_qty"
+        app:layout_constraintBottom_toTopOf="@+id/et_qty"
+        app:layout_constraintStart_toStartOf="@+id/et_qty" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_arrivalDate"
+        app:layout_constraintBottom_toTopOf="@+id/et_date"
+        app:layout_constraintStart_toStartOf="@+id/et_date" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ArrivalTime"
+        app:layout_constraintBottom_toTopOf="@+id/et_time"
+        app:layout_constraintStart_toStartOf="@+id/et_time" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DepartureTime"
+        app:layout_constraintBottom_toTopOf="@+id/et_time2"
+        app:layout_constraintStart_toStartOf="@+id/et_time2" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Departure_Date"
+        app:layout_constraintBottom_toTopOf="@+id/et_Vno"
+        app:layout_constraintStart_toStartOf="@+id/et_Vno" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/et_destination"
+        app:layout_constraintBottom_toTopOf="@+id/et_destination"
+        app:layout_constraintStart_toStartOf="@+id/et_destination" />
+
+    <EditText
+        android:id="@+id/M_et_distance2"
+        android:layout_width="112dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/et_destination"
+        app:layout_constraintStart_toEndOf="@+id/et_destination" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

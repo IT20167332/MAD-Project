@@ -5,15 +5,16 @@
     android:id="@+id/tr1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.D_travel"
+    android:background="@drawable/background33"
+    tools:context=".Activity.driverManagement.D_travel"
     tools:visibility="visible">
 
     <TextView
         android:id="@+id/t_tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="374dp"
+        android:layout_height="55dp"
         android:layout_marginTop="56dp"
-        android:text="@string/t_tv1"
+        android:text="@string/dtravel"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -33,12 +34,28 @@
 
     <TextView
         android:id="@+id/t_tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_width="136dp"
+        android:layout_height="65dp"
+        android:text="--------"
+        android:textAlignment="viewEnd"
+        android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/t_b1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/t_tv1" />
+        app:layout_constraintTop_toBottomOf="@+id/t_tv1"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="58dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:text="Km"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/t_tv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/t_tv2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.D_schedule">
+    tools:context=".Activity.driverManagement.D_schedule">
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/D_swip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/swip"
-        >
+        android:background="@drawable/background33">
+
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/D_rv"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/rv"/>
+            android:layout_height="match_parent" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>

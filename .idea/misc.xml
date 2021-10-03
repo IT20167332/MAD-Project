@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_add_employee.xml" value="0.17806484295845998" />
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_add_schedules.xml" value="0.171225937183384" />
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_bb.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_dhome.xml" value="0.2957427536231884" />
-        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_dschedule.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_dschedule.xml" value="0.1" />
         <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_dtravel.xml" value="0.2957427536231884" />
-        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_layout_dsch.xml" value="0.33469202898550726" />
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_layout_dsch.xml" value="0.1" />
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_main.xml" value="0.33469202898550726" />
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_schedules_list.xml" value="0.171225937183384" />
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/activity_sed_menu.xml" value="0.17806484295845998" />
         <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/layout_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/malin/Desktop/MAD Ass/app/src/main/res/layout/layout_sche.xml" value="0.17806484295845998" />
       </map>
     </option>
   </component>

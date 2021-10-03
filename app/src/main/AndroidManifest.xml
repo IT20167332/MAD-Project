@@ -10,18 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Oppy">
         <activity
-            android:name=".layout_dsch"
-            android:exported="true" />
-        <activity
-            android:name=".Activity.D_travel"
-            android:exported="true" />
-        <activity
-            android:name=".Activity.D_schedule"
-            android:exported="true" />
-        <activity
             android:name=".Activity.D_home"
             android:exported="true" />
-        <activity android:name=".Activity.AddEmployee" />
+        <activity
+            android:name=".Activity.add_schedules"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.AddEmployee"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SchedulesVH"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.RvAdapter"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.D_schedulesVH"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.D_RvAdapter"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.D_RvAdapter.java"
+            android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

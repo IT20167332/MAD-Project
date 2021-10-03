@@ -1,6 +1,6 @@
 package com.example.oppy.Database;
 
-import com.example.oppy.DatabaseTable.Sehedules;
+import com.example.oppy.DatabaseTable.Warehouse;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -8,18 +8,18 @@ import com.google.firebase.database.Query;
 
 import java.util.HashMap;
 
-public class ScheduleDb {
+public class warehouseDB {
 
     private DatabaseReference databaseReference;
 
-    public ScheduleDb() {
+    public warehouseDB() {
+
         FirebaseDatabase db = FirebaseDatabase.getInstance();
-        databaseReference = db.getReference(Sehedules.class.getSimpleName());
+        databaseReference = db.getReference(warehouseDB.class.getSimpleName());
     }
+    public Task<Void> add(Warehouse Spn){
 
-    public Task<Void> add(Sehedules seh){
-
-        return databaseReference.push().setValue(seh);
+        return databaseReference.push().setValue(Spn);
     }
 
     public Task<Void> update(String key, HashMap<String,Object> hashMap){
@@ -32,5 +32,6 @@ public class ScheduleDb {
     public Query get(){
         return databaseReference.orderByKey();
     }
+
 
 }

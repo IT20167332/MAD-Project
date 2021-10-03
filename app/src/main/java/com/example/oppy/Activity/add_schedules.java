@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.oppy.R;
 
-public class D_travel extends AppCompatActivity {
+public class add_schedules extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dtravel);
+        setContentView(R.layout.activity_add_schedules);
     }
 }
