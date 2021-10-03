@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-
-
     }
     public void onadd(View view){
         String email = et_username.getText().toString();
@@ -109,9 +107,6 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     prd.dismiss();
                     Toast.makeText(MainActivity.this,"Not Successful",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, weDashboard.class);
-                    startActivity(intent);
-
                 }
             }
         });

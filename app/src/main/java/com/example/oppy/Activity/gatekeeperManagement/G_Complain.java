@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,12 +47,21 @@ public class G_Complain extends AppCompatActivity {
         G_et_title2.setText(newsehdu.getTitle());
 
         Submit.setOnClickListener(v->{
-            String emid = "BRGzmN1orEe7YhuAtPtJAbBuuD53";//getInten.getExtras().getParcelable("empId");
             String description = D_et_description.getText().toString();
-            String priority = Dspin.getSelectedItem().toString();
+            if(TextUtils.isEmpty(D_et_description.getText())){
+                D_et_description.setError("Description required!");
+            }else if(!((description.length() >3)&&(description.length()<50))){
+                D_et_description.setError("the description must contain letters in between 3 to 50");
+            }else{
+                String emid = "BRGzmN1orEe7YhuAtPtJAbBuuD53";//getInten.getExtras().getParcelable("empId");
+                //String description = D_et_description.getText().toString();
+                String priority = Dspin.getSelectedItem().toString();
 
-            Complaint newCom = new Complaint(newsehdu.getKey(),emid,description,priority,newsehdu.getTitle());
-            comDb.add(newCom);
+                Complaint newCom = new Complaint(newsehdu.getKey(),emid,description,priority,newsehdu.getTitle());
+                comDb.add(newCom);
+            }
+
+
 
         });
 

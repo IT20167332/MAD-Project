@@ -1,4 +1,4 @@
-package com.example.oppy.Activity;
+package com.example.oppy.Activity.WarehouseManagement;
 
 import android.os.Bundle;
 
