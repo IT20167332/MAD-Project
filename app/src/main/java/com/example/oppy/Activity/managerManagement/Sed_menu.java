@@ -32,4 +32,8 @@ public class Sed_menu extends AppCompatActivity {
     public void btn_list(View view){
 
     }
+    public void btn_track(View view){
+        Intent intent = new Intent(this, TrackActivity.class);
+        startActivity(intent);
+    }
 }

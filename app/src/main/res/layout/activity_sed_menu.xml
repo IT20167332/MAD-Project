@@ -25,7 +25,7 @@
             android:shadowColor="#DD0D0D"
             android:text="@string/btn_schedules"
             android:textColor="#FFF9F9"
-            android:textSize="@dimen/menu_button"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/btn_sHistory"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -36,10 +36,11 @@
 
         <Button
             android:id="@+id/btn_track"
-            android:layout_width="202dp"
-            android:layout_height="51dp"
+            android:layout_width="196dp"
+            android:layout_height="57dp"
+            android:onClick="btn_track"
             android:text="TRACK"
-            android:textSize="@dimen/menu_button"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/button9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -48,8 +49,8 @@
 
         <Button
             android:id="@+id/button9"
-            android:layout_width="202dp"
-            android:layout_height="51dp"
+            android:layout_width="205dp"
+            android:layout_height="62dp"
             android:onClick="btn_addE"
             android:text="@string/btn_addE"
             android:textSize="20sp"
@@ -68,7 +69,7 @@
             android:backgroundTintMode="multiply"
             android:onClick="btn_list"
             android:text="@string/btn_sHistory"
-            android:textSize="@dimen/menu_button"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/btn_track"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

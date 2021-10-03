@@ -109,5 +109,7 @@
     <string name="txt_distance">Distance</string>
     <string name="etDista">Km</string>
     <string name="Notis_accept">ACCEPTED</string>
+    <string name="track_display">Total prossesing Schdules</string>
+    <string name="Total_complete">Total Complete schuldes</string>
 
 </resources>

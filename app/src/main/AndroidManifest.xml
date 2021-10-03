@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Oppy">
-        <activity android:name=".Activity.WarehouseManagement.warehouseList"></activity>
+        <activity android:name=".Activity.managerManagement.TrackActivity"></activity>
+        <activity android:name=".Activity.WarehouseManagement.warehouseList" />
         <activity android:name=".Activity.gatekeeperManagement.MY_complaint_activity" />
         <activity android:name=".Activity.gatekeeperManagement.G_Complain" />
         <activity android:name=".Activity.gatekeeperManagement.RV_arrival_activity" />
