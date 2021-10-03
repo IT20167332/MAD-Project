@@ -106,6 +106,8 @@
     </string>
 
     <string name="action_settings">Settings</string>
+    <string name="UserNameHint">Enter User Name</string>
+    <string name="User_name">User Name</string>
     <string name="Departuretxt">DEPARTURE</string>
     <string name="DepartureVehicleNo">VEHICLE NUMBER</string>
     <string name="DepartureTime">DEPARTURE TIME</string>
@@ -116,4 +118,9 @@
     <string name="Submitbtn">SUBMIT</string>
     <string name="Cancelbtn">CANCEL</string>
     <string name="MyComplaints">MY COMPLAINTS</string>
+    <string name="Complaint_txt">WRITE COMPLAINT</string>
+    <string name="MyComplaintstxt">MY COMPLAINTS</string>
+    <string name="Datetxt">DATE</string>
+    <string name="Complaintstxt">MY COMPLAINTS</string>
+    <string name="Actiontxt">ACTION</string>
 </resources>

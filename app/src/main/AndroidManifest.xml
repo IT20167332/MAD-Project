@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Oppy">
         <activity
+            android:name=".Activity.MyComplaints"
+            android:exported="true" />
+        <activity
             android:name=".Activity.Main_depature"
             android:exported="true" />
         <activity

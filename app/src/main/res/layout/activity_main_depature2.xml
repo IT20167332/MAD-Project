@@ -4,70 +4,152 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Main_depature">
+    android:background="@drawable/background33"
+    tools:context=".Activity.gatekeeperManagement.Main_depature">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sdsd"
+        android:layout_width="360dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="52dp"
+        android:background="#E4D291"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Vehicle Number:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="Arrival Time:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/idid2"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="WP-5070"
+            android:textSize="24sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView31"
+            app:layout_constraintStart_toEndOf="@+id/textView31" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="182dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:text="9:30 AM"
+            android:textSize="24sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView32"
+            app:layout_constraintStart_toEndOf="@+id/textView32" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Accept"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.865"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="204dp"
         android:layout_height="86dp"
+        android:layout_marginTop="16dp"
         android:text="@string/Departuretxt"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
-        android:id="@+id/tableLayout2"
-        android:layout_width="408dp"
-        android:layout_height="410dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sdsd"
+        android:layout_width="360dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="284dp"
+        android:background="#E4D291"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="Vehicle Number:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="191dp"
-                android:layout_height="wrap_content"
-                android:text="@string/DepartureVehicleNo" />
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:text="Arrival Time:"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/DepartureTime" />
-        </TableRow>
+        <TextView
+            android:id="@+id/idid2"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:text="abc-2070"
+            android:textSize="24sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView31"
+            app:layout_constraintStart_toEndOf="@+id/textView31" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="182dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:text="8:30 AM"
+            android:textSize="24sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView32"
+            app:layout_constraintStart_toEndOf="@+id/textView32" />
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Accept"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.865"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
-            <EditText
-                android:id="@+id/editTextTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="time" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

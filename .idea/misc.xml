@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_complaint.xml" value="0.1" />
+        <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_complaint.xml" value="0.264" />
         <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_gk_home.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_gk_home2.xml" value="0.264" />
         <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -11,6 +11,7 @@
         <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_main_arrival2.xml" value="0.4" />
         <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_main_depature.xml" value="0.176" />
         <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_main_depature2.xml" value="0.6" />
+        <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_my_complaints.xml" value="0.264" />
         <entry key="..\:/Users/Dell/Desktop/Mad_Project/app/src/main/res/layout/activity_qr.xml" value="0.2" />
       </map>
     </option>
