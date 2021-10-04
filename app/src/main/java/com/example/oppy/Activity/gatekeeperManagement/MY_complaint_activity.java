@@ -28,7 +28,7 @@ public class MY_complaint_activity extends AppCompatActivity {
     RecyclerView recyclerView;
     RV_complant_adapter adapter;
     //ScheduleDb dao;
-    ComplaintDB dao;
+    ComplaintDB dao = new ComplaintDB();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +43,7 @@ public class MY_complaint_activity extends AppCompatActivity {
 
         adapter = new RV_complant_adapter(this);
         recyclerView.setAdapter(adapter);
-        dao = new ComplaintDB();
+
         loadData();
 
     }

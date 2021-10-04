@@ -55,7 +55,6 @@ public class RvAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             vh.M_arrow_G.setVisibility(View.VISIBLE);
         }else{vh.M_arrow_R.setVisibility(View.VISIBLE);}
 
-
         if((sch.isStatus() == true) &&(sch.isGateCheck() == true) && (sch.isWarehouseCheck()==true)){
             vh.cl_card.setBackgroundColor(Color.rgb(198, 232, 114));
             //198, 232, 114
